@@ -2,27 +2,17 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 // no usado ^
 
-import React from "react";
+import React, { useEffect } from "react";
 import Navigation from "./app/navigations/Navigation";
+import { firebaseApp } from "./app/utils/firebase";
+import * as firebase from "firebase";
 
 export default function App() {
-    return (
-        // <View style={styles.container}>
-        //     <Text>
-        //         Hola mundo llorando mucho mucho un monton Y SE RECONTRA MATA
-        //         para siempre aiuda porfa 15:07 15:16 15:46
-        //     </Text>
-        //     <StatusBar style="auto" />
-        // </View>
-        <Navigation />
-    );
-}
+    useEffect(() => {
+        firebase.auth().onAuthStateChanged((user) => {
+            console.log(user);
+        });
+    }, []);
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: "#fff",
-        alignItems: "center",
-        justifyContent: "center",
-    },
-});
+    return <Navigation />;
+}
