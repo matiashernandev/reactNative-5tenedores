@@ -26,7 +26,7 @@ function CreateAccount() {
 
     return (
         <Text style={styles.textRegister}>
-            Aun no tenés una cuenta gilastrún?{" "}
+            Aún no tenés una cuenta gilastrún?{" "}
             <Text
                 style={styles.btnRegister}
                 onPress={
@@ -35,7 +35,7 @@ function CreateAccount() {
                 }
             >
                 {" "}
-                Resgistrate
+                Registrate
             </Text>
         </Text>
     );
