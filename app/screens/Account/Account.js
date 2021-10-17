@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import * as firebase from "firebase";
 //import { auth } from "firebase"; no entiendo un choto
-import { View, Text } from "react-native";
+
+import Loading from "../../componets/Loading";
 import UserGuest from "./UserGuest";
 import UserLogged from "./UserLogged";
 
@@ -15,7 +16,8 @@ export default function Account() {
         });
     }, []);
 
-    if (login === null) return <Text>AIUDA</Text>;
+    if (login === null)
+        return <Loading isVisible={true} text="C MATA POR UN RATO" />;
 
     return login ? <UserLogged /> : <UserGuest />;
 }
