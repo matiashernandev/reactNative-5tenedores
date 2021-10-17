@@ -73,7 +73,7 @@ function screenOptions(route, color) {
             iconName = "magnify";
             break;
         case "account":
-            iconName = "nintendo-game-boy";
+            iconName = "home-outline";
             break;
 
         default:
