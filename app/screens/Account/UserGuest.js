@@ -17,12 +17,12 @@ export default function UserGuest() {
                 Consultá tu perfil ATR perro cumbia cajeteala piola gato
             </Text>
             <Text style={styles.description}>
-                ¿Cómo describirias a tu mejor bar? Buscá y vizualizá los más
+                ¿Cómo describirias a tu mejor bar? Buscá y visualizá los más
                 copados bares sarasa sarasa....
             </Text>
             <View style={styles.viewBtn}>
                 <Button
-                    title="Ver tu perfil amiga"
+                    title="Ver tu perfil wachín"
                     buttonStyle={styles.btnStyle}
                     containerStyle={styles.btnContainer}
                     onPress={() => navigation.navigate("login")}
