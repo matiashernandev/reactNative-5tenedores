@@ -14,15 +14,15 @@ export default function UserGuest() {
                 style={styles.image}
             />
             <Text style={styles.title}>
-                Consulta tu perfil ATR perro cumbia cajeteala piola gato
+                Consultá tu perfil ATR perro cumbia cajeteala piola gato
             </Text>
             <Text style={styles.description}>
                 ¿Cómo describirias a tu mejor bar? Buscá y vizualizá los más
-                copados bares sarasa sarasa....te agarra majo sino
+                copados bares sarasa sarasa....
             </Text>
             <View style={styles.viewBtn}>
                 <Button
-                    title="Ver tu perfil amigo"
+                    title="Ver tu perfil amiga"
                     buttonStyle={styles.btnStyle}
                     containerStyle={styles.btnContainer}
                     onPress={() => navigation.navigate("login")}
