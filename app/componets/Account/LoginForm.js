@@ -74,12 +74,12 @@ export default function LoginForm(props) {
             />
 
             <Button
-                title="Inicial sesión"
+                title="Iniciar sesión"
                 containerStyle={styles.btnContainerLogin}
                 buttonStyle={styles.btnLogin}
                 onPress={onSubmit}
             />
-            <Loading isVisible={loading} text="Iniciando sesión , poné 2da" />
+            <Loading isVisible={loading} text="MMMmm.." />
         </View>
     );
 }
