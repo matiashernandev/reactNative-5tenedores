@@ -1,6 +1,7 @@
 import React from "react";
 import { StyleSheet, View, ScrollView, Text, Image } from "react-native";
 import { Divider } from "react-native-elements";
+import { useNavigation } from "@react-navigation/native";
 
 export default function Login() {
     return (
@@ -15,19 +16,22 @@ export default function Login() {
                 <CreateAccount />
             </View>
             <Divider style={styles.divider} />
-            <Text>Social loggin ............</Text>
+            <Text>c toma un ferne con pepsi ............</Text>
         </ScrollView>
     );
 }
 
 function CreateAccount() {
+    const navigation = useNavigation();
+
     return (
         <Text style={styles.textRegister}>
-            Aun no tenés una cuenta gilastrun?{" "}
+            Aun no tenés una cuenta gilastrún?{" "}
             <Text
                 style={styles.btnRegister}
-                onPress={() =>
-                    console.log("C toma un ferne con pepsi 17/10/21 1:18")
+                onPress={
+                    () => navigation.navigate("register")
+                    /* console.log("C toma un ferne con pepsi 17/10/21 1:18") */
                 }
             >
                 {" "}
